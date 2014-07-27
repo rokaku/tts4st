@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.ibm.collaboration.realtime.tts.feature"
+      label="Text-To-Speech plug-in for Sametime"
+      version="1.1.6"
+      provider-name="IBM"
+      os="win32"
+      ws="win32"
+      arch="x86">
+
+   <description url="http://web.opensource.ibm.com/www/tts4st/">
+      TTS plugin reads your incoming sametime messages to you as they
+arrive. This plugin requires Microsoft or IBM TTS runtimes to
+be installed on your machine.
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      TTS enablement prototype on Sametime
+
+Please send me a note or a picture postcard if this plugin is helpful. :-)
+
+email: charleslu@tw.ibm.com
+address: 11F., Bldg. E. 19-11 Sanchong Rd., Nankang Dist., Taipei 115, Taiwan, R.O.C.
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      This release is for IBM internal use only.
+   </license>
+
+   <url>
+      <discovery label="TTS Plugin for Sametime" url="http://web.opensource.ibm.com/www/tts4st/"/>
+   </url>
+
+   <requires>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="com.ibm.collaboration.realtime.messages"/>
+      <import plugin="com.ibm.collaboration.realtime.magiccarpet"/>
+      <import plugin="com.ibm.collaboration.realtime.chatwindow"/>
+      <import plugin="com.ibm.collaboration.realtime.imhub"/>
+      <import plugin="com.ibm.collaboration.realtime.ui"/>
+      <import plugin="com.ibm.collaboration.realtime.people"/>
+      <import plugin="com.ibm.collaboration.realtime.core"/>
+      <import plugin="com.ibm.rcp.realtime.livenames"/>
+   </requires>
+
+   <plugin
+         id="com.ibm.collaboration.realtime.tts"
+         os="win32"
+         download-size="0"
+         install-size="0"
+         version="1.1.6.qualifier"/>
+
+</feature>

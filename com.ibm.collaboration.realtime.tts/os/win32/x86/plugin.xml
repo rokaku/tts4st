@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="com.ibm.collaboration.realtime.messages.MessageHandlerListener">
+      <messageHandler
+            class="com.ibm.collaboration.realtime.tts.TTSMessageHandlerAdapter"
+            />
+   </extension>
+
+   <extension
+         point="com.ibm.collaboration.realtime.chatwindow.chatAction">
+      <chatAction
+            class="com.ibm.collaboration.realtime.tts.Toolbar"
+            disabledImage="images/TTSTalkDisable.gif"
+            id="com.ibm.collaboration.realtime.tts.chatAction1"
+            image="images/TTSTalk.gif"
+            showsFor="both"
+            tooltipText="Stop synthesis"
+            type="format"/>
+   </extension>
+
+   <extension
+         point="org.eclipse.ui.viewActions">
+      <viewContribution
+            id="com.ibm.collaboration.realtime.tts.viewactions"
+            targetID="com.ibm.collaboration.realtime.imhub">
+         <action
+               class="com.ibm.collaboration.realtime.tts.ListAction"
+               disabledIcon="images/TTSTalkDisable.gif"
+               enablesFor="0"
+               icon="images/TTStalk.gif"
+               id="com.ibm.collaboration.realtime.tts.listaction"
+               label="Toggle TTS"
+               style="push"
+               toolbarPath="buddylist/additions"
+               tooltip="TTS Stop"/>
+      </viewContribution>
+   </extension>
+
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="com.ibm.collaboration.realtime.tts.preferences.TTSPreferencePage"
+            id="com.ibm.collaboration.realtime.tts.preferences.TTSPreferencePage"
+            name="Text to Speech"/>
+   </extension>
+
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer class="com.ibm.collaboration.realtime.tts.preferences.PreferenceInitializer"/>
+   </extension>
+</plugin>

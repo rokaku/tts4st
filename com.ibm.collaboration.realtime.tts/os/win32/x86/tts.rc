@@ -1,0 +1,47 @@
+//Microsoft Developer Studio generated resource script.
+//
+
+#include "windows.h"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,1,6,0
+ PRODUCTVERSION 1,1,6,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Any comments please send to charleslu@tw.ibm.com\0"
+            VALUE "CompanyName", "IBM\0"
+            VALUE "FileDescription", "The TTS Plug-in DLL for Sametime\0"
+            VALUE "FileVersion", "1, 1, 6, 0\0"
+            VALUE "InternalName", "TTS.DLL\0"
+            VALUE "LegalCopyright", "Copyright (C) 2006, 2009\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "TTS.DLL\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "TTS Plug-in\0"
+            VALUE "ProductVersion", "1, 1, 6, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
