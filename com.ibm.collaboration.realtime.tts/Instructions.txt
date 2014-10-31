@@ -1,0 +1,21 @@
+How to enable logs:
+1. Modify tts.debug to true in the options.ini
+2. Create an empty tts.dbg from the executable file (i.e. rcplauncher.exe)
+
+How to build the native:
+1. Install SAPI 4.0 SDK
+2. Install SAPI 5.x SDK (I use 5.1)
+3. Install IBM TTS SDK
+4. Install Visual C++ 6.x
+5. Run the vcvars32
+6. Go to os/win32/x86 and execute "build.bat"
+
+How to prepare the Java env:
+1. Install Sametime runtime 8.0.2
+2. Install Sametime SDK 8.1
+3. Install Eclipse 3.2
+4. Install J2SE 1.5
+
+Memo:
+1.Becaus SAPI4 4.0 always causes J9 crash and unstable, the official build of options.ini do not enable SAPI4
+2.The Java compiliance level for ST 8.0 is 5.0, but in 7.5.x it's 1.4, in order to work for them both, the Java compliance level should be 1.4 for development
