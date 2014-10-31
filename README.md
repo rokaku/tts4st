@@ -12,7 +12,7 @@ Currently supported TTS runtimes:
 - Microsoft SAPI 4.x
 - IBM TTS v6.x (as known as IBM ECI 6.x)
 
-Compatibility
+Compatibility List
 ----
 - Lotus Notes 8.5 with embedded Sametime 8.*
 - Lotus Sametime 8.0.2
@@ -22,7 +22,7 @@ Compatibility
 - Lotus Sametime 7.5 beta4
 
 Note: Add the following line in 
-** <Notes_folder>\framework\rcp\plugin_customization.ini **
+** [Notes_folder] \framework\rcp\plugin_customization.ini **
 to enable the installation menu: File > Applications > Install
 
     com.ibm.notes.branding/enable.update.ui=true
@@ -32,6 +32,7 @@ Pre-Requisites
 TTS runtimes need to be installed on your machine. You can get it from one of the following...
 
 - Windows
+
 1. Microsoft Windows XP operating system with SAPI 5
 2. Microsoft Office XP suite (and above) with SAPI 5.0
 3. Any edition of IBM ViaVoice Release 10.5 (Recommended)
@@ -40,8 +41,11 @@ TTS runtimes need to be installed on your machine. You can get it from one of th
 6. Any other Microsoft SAPI 5.x or 4.x compatible TTS runtimes
 
 - Linux (TODO)
+
 1. Open Client for Linux 
+
 - Mac OS X (TODO)
+
 1. IBM TTS for Mac OS X
 
 Configuration
@@ -63,18 +67,21 @@ To install this plugin:
 8. Confirm you are installing "TTS for Sametime" and click "Install".
 9. Restart Sametime, if you can see the TTS icon on the Sametime Contact List, it means that TTS plugin is ready to go. Enjoy it!
 
-Screen shots
+Screenshots
 ----
 TTS synthesis icon
-![TTS synthesis icon][TTS-Plugin]
+
+![](TTS-Plugin.jpg)
 
 Turn off current synthesis
-<img src="chat-tts.jpg"/>　	
+
+![](chat-tts.jpg)
 
 Preference Page
-<img src="preference.jpg"/>　
 
-Checking for updates
+![](preference.jpg)
+
+Check for updates
 ----
 Follow these instructions if you have already installed the plug-in:
 
@@ -101,7 +108,7 @@ Changes History
 
 Troubleshooting
 ----
-- If there is anything wrong (e.g. VM crash...etc.) for the plugin, please try to delete the preference settings. To clean the settings, just delete the file ** com.ibm.collaboration.realtime.tts.prefs ** on C:\Documents and Settings\[Your name]\IBM\RCP\Sametime\.metadata\.plugins\org.eclipse.core.runtime\.settings directory.
+- If there is anything wrong (e.g. VM crash...etc.) for the plugin, please try to delete the preference settings. To clean the settings, just delete the file ** com.ibm.collaboration.realtime.tts.prefs ** on C:\Documents and Settings\ [Your name]\IBM\RCP\Sametime\.metadata\.plugins\org.eclipse.core.runtime\.settings directory.
 - If you encounter any problem for TTS plug-in, such as Sametime crash, try to change the values of SAPI4 and IBM ECI to false in options.ini to disable specific TTS runtimes.
 - Email your problem to me and I will try to investigate the problem if possible...
 
@@ -117,5 +124,5 @@ License
 MIT
 
  [Jean-Francois Lagarde]:mailto:jean-francois_lagarde@fr.ibm.com
- [url]:https://github.com/rokaku/tts4st
- [TTS-Plugin]:TTS-Plugin.jpg
+ [url]:https://github.com/rokaku/tts4st/bin
+ 
